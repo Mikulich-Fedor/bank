@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gotu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bank Homework 8</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bank</h1>
+    </header>
+    <section>
+      <h2>Курсы валют на сегодня</h2>
+      <div class="container-money">
+        <div class="container-money_name bank-el">
+          Валюта <span>Доллар</span> <span>Евро</span>
+          <span>Рубль<sup>100</sup></span>
+          <span>Гривна</span>
+        </div>
+        <div class="container-money_buy bank-el">
+          Официфльный курс
+          <span id="usdBuy">Доллар</span>
+          <span id="euroBuy">Евро</span>
+          <span id="rubBuy">Рубль </span>
+          <span id="grnBuy">Гривна</span>
+        </div>
+      </div>
+      <div class="money-calc">
+        <select name="money" id="money">
+          <option id="calcUSE" value="USD">Доллар</option>
+          <option id="calcEuro" value="Euro">Евро</option>
+          <option id="calcRub" value="Rub">Рубль</option>
+          <option id="calcGrivna" value="Grivna">Гривна</option>
+        </select>
+        <input id="enterMoney" type="text" placeholder="Введите сумму в BYN" />
+
+        <input id="calcRest" type="text" readonly />
+        <input id="calcButton" type="button" value="Перевести" />
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
